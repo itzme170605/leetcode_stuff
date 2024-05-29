@@ -1,7 +1,8 @@
 class Solution:
-    numList = []
+    numList = [] #problem 2 shared resource 
 
     def alt(self, s: str):
+        #problem 2 
         if not s:
             return None
         temp = ""
@@ -19,6 +20,7 @@ class Solution:
         
 
     def lengthOfLongestSubstring(self, s: str) -> int:
+        #problem 2
         self.alt(s)
         return max(self.numList)
 
